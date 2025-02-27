@@ -208,7 +208,7 @@ let
     in
     super.wrapFirefox pkg {
       pname = "${pkg.binaryName}-bin";
-      desktopName = version.name or { };
+      desktopName = version.name or null;
       wmClass = version.wmClass;
     };
 
